@@ -16,4 +16,6 @@ public:
     SDL_Rect getDest()
 };
 
+man!
+
 #endif // OBJECT_H
