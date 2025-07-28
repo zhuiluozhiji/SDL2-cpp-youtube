@@ -16,6 +16,6 @@ public:
     SDL_Rect getDest()
 };
 
-man!
+man!what can i say
 
 #endif // OBJECT_H
