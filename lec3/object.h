@@ -5,6 +5,7 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+using namespace std;
 
 class Object {
 private:
@@ -13,9 +14,13 @@ private:
     SDL_Texture* tex;
 public:
     Object(){}
-    SDL_Rect getDest()
+    SDL_Rect getDest() const { return dest; }
+    SDL_Rect getSource() const { return src; }
+    void setDest(int x, int y, int w, int h) ;
+    void setSource(int x, int y, int w, int h) ;
+    void setImage(string filename , SDL_Renderer* ren);
 };
 
-man!what can i say
+
 
 #endif // OBJECT_H
